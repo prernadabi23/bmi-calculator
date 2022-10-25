@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="img">
+      <!-- <img src="images/1.png" alt=""> -->
+    </div>
+    <div class="heading">
+      <h2>BMI CALCULATOR</h2>
+      <p class = "wt">Weight(in kg)</p>
+      <input type="text" id="weight">
+
+      <p class = "ht">Height(In cm)</p>
+      <input type="text" id = "height">
+
+      <p id = "result"></p>
+      <button class ="btn" onclick="bmi()">Check Result</button>
+      <p class = "pp">Please enter the informatin correctly.</p>
+
+    </div>
+
+    <script>
+      function bmi(){
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+        var calculation = weight / (height/100 * height/100);
+        var answer = calculation.toFixed(2);
+        document.getElementById('result').innerHTML = "Your BMI is "+ answer +"."
+      }
+    </script>
+  </body>
+</html>

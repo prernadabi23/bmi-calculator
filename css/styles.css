@@ -1,0 +1,72 @@
+body{
+
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #005555;
+
+
+}
+h2{
+  font-size:70px;
+  font-weight: 200;
+  color: white;
+}
+
+input{
+  scroll-behavior: smooth;
+  shape-margin: 20px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: 10;
+  color: white;
+}
+
+#weight,#height{
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 20;
+  border: 1px solid white;
+  width: 300px;
+  background-color: transparent;
+  border-radius: 2px;
+  outline: none;
+
+}
+
+.pp{
+  color: white;
+  font-size: 15px;
+  font-weight: 5;
+}
+
+.btn {
+  background: white;
+  background-image: -webkit-linear-gradient(top, white, white);
+  background-image: -moz-linear-gradient(top, white, white);
+  background-image: -ms-linear-gradient(top, white, white);
+  background-image: -o-linear-gradient(top, white, white);
+  background-image: linear-gradient(to bottom, white, white);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: black;
+  font-size: px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: grey;
+  background-image: -webkit-linear-gradient(top, grey, grey);
+  background-image: -moz-linear-gradient(top, grey, grey);
+  background-image: -ms-linear-gradient(top, grey, grey);
+  background-image: -o-linear-gradient(top, grey, grey);
+  background-image: linear-gradient(to bottom, grey, grey);
+  text-decoration: none;
+}
